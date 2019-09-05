@@ -7,3 +7,5 @@ hibernate {
         auto = "create-drop"
     }
 }
+endpoints.all.path='/actuator'
+endpoints.all.sensitive=false

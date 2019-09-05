@@ -29,6 +29,7 @@ scrape_configs:
     - targets: ['nodeexporter:9100']
 
   - job_name: consul
+    metrics_path: /actuator/prometheus
     consul_sd_configs:
       - server: 'consul:8500'
     relabel_configs:      

@@ -4,6 +4,6 @@ import io.reactivex.Single;
 import io.micronaut.http.annotation.Get;
 
 public interface HealthStatusOperation {
-    @Get("/health")
+    @Get("/actuator/health")
     Single<HealthStatus> health();
 }

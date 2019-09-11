@@ -30,7 +30,11 @@
       },
       "defaultZone":"${CONSUL_HOST:localhost}:${CONSUL_PORT:8500}"
     }
+  },
+  "endpoints": {
+    "all": {
+      "path": "/actuator",
+      "sensitive": false
+    }
   }
 }
-
-
